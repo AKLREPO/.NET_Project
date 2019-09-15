@@ -12,6 +12,12 @@ namespace ECommerce_Ackcio.Models
             shoppingCart = new List<Product>();
         }
 
+
+        public List<Product> GetShoppingCart()
+        {
+            return shoppingCart;
+        }
+
         public void addProductToCart(Product product)
         {
             try
@@ -24,12 +30,19 @@ namespace ECommerce_Ackcio.Models
             }
         }
 
-        public void removeProductFromCart(int productID)
+        public Boolean removeProductFromCart(int productID)
         {
+            foreach(Product product in shoppingCart)
+            {
+                if(product.ID == productID)
+                {
+                    shoppingCart.Remove(product);
+                    return true;
+                }
+            }
 
-            
 
-
+            return false;
         }
 
 

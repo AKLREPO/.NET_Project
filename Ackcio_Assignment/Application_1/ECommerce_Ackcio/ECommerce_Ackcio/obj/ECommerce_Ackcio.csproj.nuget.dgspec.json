@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/angkokleong/Desktop/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/ECommerce_Ackcio.csproj": {}
+    "/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/ECommerce_Ackcio.csproj": {}
   },
   "projects": {
-    "/Users/angkokleong/Desktop/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/ECommerce_Ackcio.csproj": {
+    "/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/ECommerce_Ackcio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/angkokleong/Desktop/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/ECommerce_Ackcio.csproj",
+        "projectUniqueName": "/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/ECommerce_Ackcio.csproj",
         "projectName": "ECommerce_Ackcio",
-        "projectPath": "/Users/angkokleong/Desktop/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/ECommerce_Ackcio.csproj",
+        "projectPath": "/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/ECommerce_Ackcio.csproj",
         "packagesPath": "/Users/angkokleong/.nuget/packages/",
-        "outputPath": "/Users/angkokleong/Desktop/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/obj/",
+        "outputPath": "/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -66,10 +66,6 @@
               "version": "[2.2.0, )",
               "autoReferenced": true
             },
-            "NUnit": {
-              "target": "Package",
-              "version": "[3.12.0, )"
-            },
             "bootstrap": {
               "target": "Package",
               "version": "[4.3.1, )"
@@ -77,6 +73,10 @@
             "jQuery": {
               "target": "Package",
               "version": "[3.4.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [

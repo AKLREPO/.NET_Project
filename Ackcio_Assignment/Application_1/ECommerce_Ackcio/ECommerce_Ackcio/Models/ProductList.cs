@@ -7,7 +7,39 @@ namespace ECommerce_Ackcio.Models
     public class ProductList
     {
 
-        public List<Product> productList;
+        private List<Product> productList = new List<Product>();
+
+        public ProductList()
+        {
+            
+            Product newProduct = new Product
+            {
+                ID = 1,
+                Name = "SDSD",
+                Price = 21.90,
+                Quantity = 20
+            };
+
+            productList.Add(newProduct);
+
+
+            newProduct = new Product
+            {
+                ID = 2,
+                Name = "SDSDSD",
+                Price = 12.00,
+                Quantity = 11
+            };
+            productList.Add(newProduct);
+
+        }
+
+
+        public List<Product> GetProductList()
+        {
+            return productList;
+        }
+
 
         public void AddProduct(Product product)
         {
@@ -19,7 +51,7 @@ namespace ECommerce_Ackcio.Models
 
             foreach(Product product in productList)
             {
-                if(product.ID == productID.ToString())
+                if(product.ID == productID)
                 {
                     productList.Remove(product);
                     return true;

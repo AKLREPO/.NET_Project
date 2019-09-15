@@ -1,22 +1,67 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@model ECommerce_Ackcio.Views.Home.IndexModel
+@{
+
+    ViewData["Title"] = "Home";
+
 }
 
 
-
-<div class="container text-center">
+<!-- //https://stackoverflow.com/questions/21754071/templates-can-be-used-only-with-field-access-property-access-single-dimension-->
+<div class="container">
     <div class="row">
         <div class="col"></div>
-        <div class="col-8 menu">
+        <div class="col-8 content-data">
 
+            <p>
+                <a asp-action="Create">Create New</a>
+            </p>
 
+            <table class="table center">
 
+                <thead>            
+                    <tr>                
+                        <th>                    
+                            Product Name
+                        </th>                
+                        <th>                    
+                            Price
+                        </th>                
+                        <th>                    
+                            Quantity
+                        </th>                
+                    </tr>        
+                </thead>
 
-        </div>        
+                <tbody>
+                    @foreach (Product product in Model.productList)
+                    {
+
+                        int quantity = product.Quantity;
+                        String productName = product.Name;
+                        double price = product.Price;
+                        String id = product.ID;
+
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(model => productName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => price)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => quantity)
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@id">Edit</a> | <a asp-action="Delete" asp-route-id="@id">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
         <div class="col"></div>
-
     </div>
 
-
 </div>
-

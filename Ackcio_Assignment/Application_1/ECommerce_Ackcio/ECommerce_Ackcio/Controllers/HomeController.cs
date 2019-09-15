@@ -5,23 +5,46 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ECommerce_Ackcio.Models;
+using ECommerce_Ackcio.Views.Home;
 
 namespace ECommerce_Ackcio.Controllers
 {
     public class HomeController : Controller
     {
+        private ProductList _productList;
+        private ShoppingCart _shoppingCart;
 
-        ProductList productList = new ProductList();
+        public HomeController(ShoppingCart shoppingCart, ProductList productList)
+        {
+            _productList = productList;
+            _shoppingCart = shoppingCart;
+        }
 
         public IActionResult Index()
         {
-            return View();
+            return View(new IndexModel(_productList, _shoppingCart));
         }
 
         public IActionResult Privacy()
         {
             return View();
         }
+
+        public IActionResult Edit()
+        {
+            return View();
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        public IActionResult Delete()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

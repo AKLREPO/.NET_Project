@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ECommerce_Ackcio.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -35,12 +36,16 @@ namespace ECommerce_Ackcio
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
 
+            services.AddSingleton<ProductList>();
+            services.AddSingleton<ShoppingCart>();
 
-            Action<ECommerce_Ackcio.Models.ProductList> productListRegister = (opt =>
-            {
-                opt.productList = 
-            });
 
+            //uses HTTP Session to store the productList data and shoppingCart data
+            //https://benjii.me/2016/07/using-sessions-and-httpcontext-in-aspnetcore-and-mvc-core/
+
+            //services.AddMvc();
+            //services.AddDistributedMemoryCache();
+            //services.AddSession();
 
         }
 
@@ -61,6 +66,8 @@ namespace ECommerce_Ackcio
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
+            //app.UseSession();
 
             app.UseMvc(routes =>
             {
