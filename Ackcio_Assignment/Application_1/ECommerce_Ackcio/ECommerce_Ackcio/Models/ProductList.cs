@@ -40,7 +40,6 @@ namespace ECommerce_Ackcio.Models
             return productList;
         }
 
-
         public void AddProduct(Product product)
         {
             productList.Add(product);

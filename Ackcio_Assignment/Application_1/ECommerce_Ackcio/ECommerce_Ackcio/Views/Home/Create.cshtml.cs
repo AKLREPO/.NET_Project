@@ -5,25 +5,22 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ECommerce_Ackcio.Models;
-using System.Diagnostics;
 
 namespace ECommerce_Ackcio.Views.Home
 {
-    public class IndexModel : PageModel
+    public class CreateModel : PageModel
     {
+
         public List<Product> productList { get; set; }
-        public List<Product> shoppingCart { get; set; }
+        public Product ProductObj { get; set; }
 
-        public IndexModel() { }
 
-        public IndexModel(ProductList productListObj, ECommerce_Ackcio.Models.ShoppingCart shoppingCartObj)
+        public CreateModel() { }
+
+        public CreateModel(ProductList productListObj)
         {
             productList = productListObj.GetProductList();
-            shoppingCart = shoppingCartObj.GetShoppingCart();
         }
-
-
-
 
         public void OnGet()
         {

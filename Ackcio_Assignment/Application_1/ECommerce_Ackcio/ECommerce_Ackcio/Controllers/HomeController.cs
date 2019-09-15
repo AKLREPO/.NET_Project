@@ -35,9 +35,21 @@ namespace ECommerce_Ackcio.Controllers
             return View();
         }
 
+        //https://dev.to/azure/creating-the-simplest-possible-aspnet-core-form-with-a-post-method-416g
+
+        [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            return View(new CreateModel(_productList));
+        }
+
+        [HttpPost]
+        public IActionResult Create(CreateModel createModel)
+        {
+
+            _productList.AddProduct(createModel.ProductObj);
+            return RedirectToAction("Index");
+
         }
 
         public IActionResult Delete()

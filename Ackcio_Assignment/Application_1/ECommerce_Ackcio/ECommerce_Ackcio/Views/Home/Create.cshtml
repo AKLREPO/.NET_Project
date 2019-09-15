@@ -1,0 +1,83 @@
+﻿
+@model ECommerce_Ackcio.Views.Home.CreateModel
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+
+<div class="container">
+    <div class="col"></div>
+
+    <div class="col-8 content-data">
+        <form asp-action="Create" asp-controller="Home">
+            <table class="table center">
+
+                <thead>
+                    <tr>
+                        <th>
+                            Create Product
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+
+                    @{
+                        int ID = 0;
+                        foreach (Product product in Model.productList)
+                        {
+                            if(ID < product.ID)
+                            {
+                                ID = product.ID;
+                            }
+                        }
+                    }
+
+                    <tr>
+                        <td>
+                            ID:
+                        </td>
+                        <td>
+                            <input asp-for="ProductObj.ID" type="text" value="@ID" readonly />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Product Name:
+                        </td>
+                        <td>
+                            <input asp-for="ProductObj.Name" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Price:
+                        </td>
+                        <td>
+                            <input asp-for="ProductObj.Price" type="text"  />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Quantity:
+                        </td>
+                        <td>
+                            <input asp-for="ProductObj.Quantity" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="float-right">
+                            <button type="submit">
+                                Submit
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+    </div>
+    <div class="col"></div>
+
+</div>

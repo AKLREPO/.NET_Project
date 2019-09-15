@@ -59,3 +59,4 @@
 /Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/obj/Debug/netcoreapp2.2/ECommerce_Ackcio.RazorTargetAssemblyInfo.cs
 /Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/obj/Debug/netcoreapp2.2/ECommerce_Ackcio.Views.pdb
 /Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/obj/Debug/netcoreapp2.2/ECommerce_Ackcio.csproj.CopyComplete
+/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/obj/Debug/netcoreapp2.2/Razor/Views/Home/Create.g.cshtml.cs
