@@ -23,8 +23,13 @@ using ECommerce_Ackcio.Models;
 
 #line default
 #line hidden
+#line 3 "/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/Views/_ViewImports.cshtml"
+using ECommerce_Ackcio.Services;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d8ddb6bffa5a9b264bf8f89038bf03c234083fd3", @"/Views/Home/Privacy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d8e5c14ad24106c70f91b7db4d86e861c4b2da5b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dcf56e3b78c4fc3272bb5ab499624d5493959e27", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Privacy : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

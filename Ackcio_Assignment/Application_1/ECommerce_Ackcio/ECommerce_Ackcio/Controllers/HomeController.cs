@@ -5,24 +5,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ECommerce_Ackcio.Models;
-using ECommerce_Ackcio.Views.Home;
+using ECommerce_Ackcio.Services;
 
 namespace ECommerce_Ackcio.Controllers
 {
+    
     public class HomeController : Controller
     {
-        private ProductList _productList;
-        private ShoppingCart _shoppingCart;
-
-        public HomeController(ShoppingCart shoppingCart, ProductList productList)
+        private IData _data;
+        public HomeController(IData data)
         {
-            _productList = productList;
-            _shoppingCart = shoppingCart;
+            _data = data;
         }
-
+        
         public IActionResult Index()
         {
-            return View(new IndexModel(_productList, _shoppingCart));
+            return View(_data);
         }
 
         public IActionResult Privacy()
@@ -35,28 +33,12 @@ namespace ECommerce_Ackcio.Controllers
             return View();
         }
 
+
         //https://dev.to/azure/creating-the-simplest-possible-aspnet-core-form-with-a-post-method-416g
-
-        [HttpGet]
-        public IActionResult Create()
-        {
-            return View(new CreateModel(_productList));
-        }
-
-        [HttpPost]
-        public IActionResult Create(CreateModel createModel)
-        {
-
-            _productList.AddProduct(createModel.ProductObj);
-            return RedirectToAction("Index");
-
-        }
-
         public IActionResult Delete()
         {
             return View();
         }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

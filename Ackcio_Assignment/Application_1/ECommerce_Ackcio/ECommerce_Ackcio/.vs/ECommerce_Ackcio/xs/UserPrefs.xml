@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{F30AF796-B70E-422C-98F5-F0D4CB856ECE}|Default">
   <MonoDevelop.Ide.ItemProperties.ECommerce__Ackcio PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
-      <File FileName="Views/Home/Index.cshtml.cs" Line="24" Column="1" />
-      <File FileName="Views/Home/Index.cshtml" Line="39" Column="22" />
-      <File FileName="Controllers/HomeController.cs" Line="44" Column="10" />
-      <File FileName="Views/Home/Create.cshtml" Line="36" Column="1" />
-      <File FileName="Views/Home/Create.cshtml.cs" Line="18" Column="1" />
-      <File FileName="Models/ProductList.cs" Line="42" Column="1" />
-      <File FileName="Startup.cs" Line="1" Column="1" />
-      <File FileName="Program.cs" Line="16" Column="10" />
+      <File FileName="Services/PopulateData.cs" Line="5" Column="11" />
+      <File FileName="Controllers/HomeController.cs" Line="12" Column="5" />
+      <File FileName="Views/Home/Index.cshtml" Line="3" Column="46" />
+      <File FileName="Startup.cs" Line="70" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,31 +14,24 @@
             <Node name="ECommerce_Ackcio" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-              </Node>
-              <Node name="Program.cs" selected="True" />
+              <Node name="wwwroot" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/Controllers/HomeController.cs" relfile="Controllers/HomeController.cs" line="50" column="1" />
-      <Breakpoint file="/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/Controllers/HomeController.cs" relfile="Controllers/HomeController.cs" line="51" column="1" />
-      <Breakpoint file="/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/Controllers/HomeController.cs" relfile="Controllers/HomeController.cs" line="43" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

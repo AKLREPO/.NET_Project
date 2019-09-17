@@ -24,4 +24,8 @@
     <Compile Remove="Controllers\ShoppingCart.cs" />
     <Compile Remove="Models\SessionExtensions.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
 </Project>

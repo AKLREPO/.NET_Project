@@ -23,8 +23,13 @@ using ECommerce_Ackcio.Models;
 
 #line default
 #line hidden
+#line 3 "/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/Views/_ViewImports.cshtml"
+using ECommerce_Ackcio.Services;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cedc54ac0647089983dc0dcf70eb53531b04c834", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d8e5c14ad24106c70f91b7db4d86e861c4b2da5b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dcf56e3b78c4fc3272bb5ab499624d5493959e27", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

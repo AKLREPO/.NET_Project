@@ -1,5 +1,5 @@
 ﻿
-@model ECommerce_Ackcio.Views.Home.CreateModel
+
 @{
     ViewData["Title"] = "Create Product";
 }
@@ -23,23 +23,13 @@
                 <tbody>
 
 
-                    @{
-                        int ID = 0;
-                        foreach (Product product in Model.productList)
-                        {
-                            if(ID < product.ID)
-                            {
-                                ID = product.ID;
-                            }
-                        }
-                    }
 
                     <tr>
                         <td>
                             ID:
                         </td>
                         <td>
-                            <input asp-for="ProductObj.ID" type="text" value="@ID" readonly />
+                            <input type="text" value="" readonly />
                         </td>
                     </tr>
                     <tr>
@@ -47,7 +37,7 @@
                             Product Name:
                         </td>
                         <td>
-                            <input asp-for="ProductObj.Name" type="text" />
+                            <input type="text" />
                         </td>
                     </tr>
                     <tr>
@@ -55,7 +45,7 @@
                             Price:
                         </td>
                         <td>
-                            <input asp-for="ProductObj.Price" type="text"  />
+                            <input type="text"  />
                         </td>
                     </tr>
                     <tr>
@@ -63,7 +53,7 @@
                             Quantity:
                         </td>
                         <td>
-                            <input asp-for="ProductObj.Quantity" type="text" />
+                            <input type="text" />
                         </td>
                     </tr>
                     <tr>

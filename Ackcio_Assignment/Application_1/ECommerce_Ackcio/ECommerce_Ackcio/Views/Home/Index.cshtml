@@ -1,9 +1,9 @@
 ﻿
-@model ECommerce_Ackcio.Views.Home.IndexModel
+
+@model ECommerce_Ackcio.Services.PopulateData
+
 @{
-
     ViewData["Title"] = "Home";
-
 }
 
 
@@ -21,41 +21,30 @@
 
             <table class="table center">
 
-                <thead>            
-                    <tr>                
-                        <th>                    
+                <thead>
+                    <tr>
+                        <th>
                             Product Name
-                        </th>                
-                        <th>                    
+                        </th>
+                        <th>
                             Price
-                        </th>                
-                        <th>                    
+                        </th>
+                        <th>
                             Quantity
-                        </th>                
-                    </tr>        
+                        </th>
+                    </tr>
                 </thead>
 
                 <tbody>
-                    @foreach (Product product in Model.productList)
+
+                    @foreach (var product in Model.GetProductList())
                     {
-
-                        int quantity = product.Quantity;
-                        String productName = product.Name;
-                        double price = product.Price;
-                        int id = product.ID;
-
                         <tr>
+                            <td>@product.Name</td>
+                            <td>@product.Price</td>
+                            <td>@product.Quantity</td>
                             <td>
-                                @Html.DisplayFor(model => productName)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(model => price)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(model => quantity)
-                            </td>
-                            <td>
-                                <a asp-action="Edit" asp-route-id="@id">Edit</a> | <a asp-action="Delete" asp-route-id="@id">Delete</a>
+                                <a asp-action="Edit" asp-route-id="@product.ID">Edit</a> | <a asp-action="Delete" asp-route-id="@product.ID">Delete</a>
                             </td>
                         </tr>
                     }

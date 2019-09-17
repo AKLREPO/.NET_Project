@@ -23,13 +23,18 @@ using ECommerce_Ackcio.Models;
 
 #line default
 #line hidden
+#line 3 "/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/Views/_ViewImports.cshtml"
+using ECommerce_Ackcio.Services;
+
+#line default
+#line hidden
 #line 1 "/Users/angkokleong/Desktop/Programming/Project/Ackcio_Assignment/Application_1/ECommerce_Ackcio/ECommerce_Ackcio/Views/Shared/_CookieConsentPartial.cshtml"
 using Microsoft.AspNetCore.Http.Features;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"221c220872faa0ba404aaf1350fac6c0453b5070", @"/Views/Shared/_CookieConsentPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d8e5c14ad24106c70f91b7db4d86e861c4b2da5b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dcf56e3b78c4fc3272bb5ab499624d5493959e27", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__CookieConsentPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-area", "", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -83,7 +88,7 @@ using Microsoft.AspNetCore.Http.Features;
             WriteLiteral("    <div id=\"cookieConsent\" class=\"alert alert-info alert-dismissible fade show\" role=\"alert\">\r\n        Use this space to summarize your privacy and cookie use policy. ");
             EndContext();
             BeginContext(457, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "221c220872faa0ba404aaf1350fac6c0453b50705558", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "221c220872faa0ba404aaf1350fac6c0453b50705768", async() => {
                 BeginContext(515, 10, true);
                 WriteLiteral("Learn More");
                 EndContext();

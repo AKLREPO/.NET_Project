@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ECommerce_Ackcio.Services;
 
 namespace ECommerce_Ackcio
 {
@@ -35,9 +36,10 @@ namespace ECommerce_Ackcio
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddScoped<IData, PopulateData>();
 
-            services.AddSingleton<ProductList>();
-            services.AddSingleton<ShoppingCart>();
+            //services.AddSingleton<ProductList>();
+            //services.AddSingleton<ShoppingCart>();
 
 
             //uses HTTP Session to store the productList data and shoppingCart data
@@ -63,11 +65,14 @@ namespace ECommerce_Ackcio
                 app.UseHsts();
             }
 
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
             //app.UseSession();
+
+
 
             app.UseMvc(routes =>
             {
