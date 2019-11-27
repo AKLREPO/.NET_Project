@@ -1,0 +1,34 @@
+{
+  "streams": [
+    {
+      "title": "asdasd",
+      "description": "asdasdasd",
+      "userId": "116498503523805213103",
+      "id": 6
+    },
+    {
+      "title": "asd",
+      "description": "asdasdasd",
+      "userId": "116498503523805213103",
+      "id": 7
+    },
+    {
+      "title": "asdasdasdasdasd",
+      "description": "asdasdads",
+      "userId": "116498503523805213103",
+      "id": 8
+    },
+    {
+      "title": "asdad",
+      "description": "asdasdasdasd",
+      "userId": "116498503523805213103",
+      "id": 9
+    },
+    {
+      "title": "abc",
+      "description": "def",
+      "userId": "116498503523805213103",
+      "id": 10
+    }
+  ]
+}
